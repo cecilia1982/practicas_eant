@@ -63,6 +63,13 @@ podemos crear cuantas clases necesitemos, un elemento puede tener id y clase, ta
   background-color: deeppink;
 }
 
+/*SELECTOR UNIVERSAL - Aplica a todos los elementos - No es recomendable usarlo*/
+
+* {
+  background-color: gold;
+}
+
+/**/
 /*COMODINES NINJA CSS*/
 
 span [title="youtube" i] {
@@ -70,3 +77,32 @@ span [title="youtube" i] {
 }
 /*Les estoy diciendo que aplique a un selector de etiqueta llamado span, con atributo title, 
  con el valor youtube y ademas le agrego la letra i para avisarle que sea insensible a mayusculas o minusculas*/
+
+span [title$="you"] {
+  font-size: 50px;
+}
+
+/*Aplica a todo lo que termine con YOU*/
+
+span [title*="a"] {
+  font-size: 50px;
+}
+/*Aplica a todos los elementos que contengan la letra a*/
+
+/*-------------------EN RESUMEN COSAS NINJA---------------------
+  ^ = empieza con
+  $ = termina con
+  * = contiene ...
+  i = insensible a may o min
+*/
+
+/*---------SELECTOR DE HERMANOS------------*/
+h1 + p {
+  color: blue;
+}
+/*Selecciona al hermano siguientedel elemento h1 no a todos los demas*/
+
+h1 ~ p {
+  color: blueviolet;
+}
+/*Selecciona a todos los hermanos que tenga el h1*/

@@ -5,5 +5,330 @@
 
     <title>Jugando con TABLAS</title>
   </head>
-  <body></body>
+  <body
+    style="
+      background-color: cornsilk;
+      text-align: center;
+      font-family: monospace;
+    "
+  >
+    <h1 style="color: blue;">
+      Soy un documento de tablas &#9997;
+    </h1>
+    <p>
+      <strong
+        >Las tablas HTML permiten a los desarrolladores web organizar los datos
+        en filas y columnas.</strong
+      >
+    </p>
+    <br />
+
+    <!-----
+      
+      *> La etiqueta <table> define una tabla HTML.
+      *> Cada fila de la tabla se define con una  etiqueta <tr>
+      *> Cada encabezado de tabla se define con una etiqueta<th>
+      *> Cada tabla de datos / celda se define con una etiqueta <td>
+
+      Por defecto, el texto en los elementos <th> está en negrita y centrado.
+
+      Por defecto, el texto en los elementos <td> es regular y alineado a la izquierda.
+      
+      ------->
+
+    <!---TABLA COMUN / BASE--->
+
+    <table style="width: 100%;">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <br />
+
+    <h2 style="color: crimson;">Como hicimos para agregarle ONDA</h2>
+
+    <!---TABLA CON BORDES Y FONDO--->
+
+    <table style="width: 100%;">
+      <tr>
+        <th class="tabla-2">Firstname</th>
+        <th class="tabla-2">Lastname</th>
+        <th class="tabla-2">Age</th>
+      </tr>
+      <tr>
+        <td class="tabla-2">Jill</td>
+        <td class="tabla-2">Smith</td>
+        <td class="tabla-2">50</td>
+      </tr>
+      <tr>
+        <td class="tabla-2">Eve</td>
+        <td class="tabla-2">Jackson</td>
+        <td class="tabla-2">94</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-2 {
+        border: 1px solid black;
+        background-color: cyan;
+      }
+    </style>
+    <br />
+
+    <!---Tabla HTML - Bordes contraídos--->
+    <h2 style="color: crimson;">Con bordes contraidos</h2>
+    <table class="tabla-3" style="width: 100%;">
+      <tr>
+        <th class="tabla-3">Firstname</th>
+        <th class="tabla-3">Lastname</th>
+        <th class="tabla-3">Age</th>
+      </tr>
+      <tr>
+        <td class="tabla-3">Jill</td>
+        <td class="tabla-3">Smith</td>
+        <td class="tabla-3">50</td>
+      </tr>
+      <tr>
+        <td class="tabla-3">Eve</td>
+        <td class="tabla-3">Jackson</td>
+        <td class="tabla-3">94</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-3 {
+        border: 1px solid black;
+        background-color: rgb(229, 255, 0);
+        border-collapse: collapse;
+      }
+    </style>
+    <br />
+    <!---Tabla HTML - Agregar relleno de celda--->
+    <h2 style="color: crimson;">Con padding</h2>
+    <table class="tabla-4" style="width: 100%;">
+      <tr>
+        <th class="tabla-4">Firstname</th>
+        <th class="tabla-4">Lastname</th>
+        <th class="tabla-4">Age</th>
+      </tr>
+      <tr>
+        <td class="tabla-4">Jill</td>
+        <td class="tabla-4">Smith</td>
+        <td class="tabla-4">50</td>
+      </tr>
+      <tr>
+        <td class="tabla-4">Eve</td>
+        <td class="tabla-4">Jackson</td>
+        <td class="tabla-4">94</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-4 {
+        border: 1px solid black;
+        background-color: rgb(224, 39, 248);
+        border-collapse: collapse;
+        padding: 15px;
+        color: ghostwhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+    <br />
+    <!---Tabla HTML - Encabezados alineados--->
+    <h2 style="color: crimson;">Textos alineados &#9977;</h2>
+    <table class="tabla-5" style="width: 100%;">
+      <tr>
+        <th class="tabla-5">Firstname</th>
+        <th class="tabla-5">Lastname</th>
+        <th class="tabla-5">Age</th>
+      </tr>
+      <tr>
+        <td class="tabla-5">Jill</td>
+        <td class="tabla-5">Smith</td>
+        <td class="tabla-5">50</td>
+      </tr>
+      <tr>
+        <td class="tabla-5">Eve</td>
+        <td class="tabla-5">Jackson</td>
+        <td class="tabla-5">94</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-5 {
+        border: 1px solid black;
+        background-color: rgb(248, 50, 43);
+        border-collapse: collapse;
+        padding: 15px;
+        color: ghostwhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left; /*Aca podemos colocar el cardinal que mas nos guste, center - justify - left - right*/
+      }
+    </style>
+    <br />
+    <!---Tabla HTML - Agregar espacio de borde--->
+    <h2 style="color: crimson;">Espacios entre bordes &#9757;</h2>
+    <table class="tabla-6" style="width: 100%;">
+      <tr>
+        <th class="tabla-6">Firstname</th>
+        <th class="tabla-6">Lastname</th>
+        <th class="tabla-6">Age</th>
+      </tr>
+      <tr>
+        <td class="tabla-6">Jill</td>
+        <td class="tabla-6">Smith</td>
+        <td class="tabla-6">50</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-6 {
+        border: 2px solid black;
+        background-color: rgb(188, 112, 231);
+        color: rgb(49, 202, 202);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; /*Aca podemos colocar el cardinal que mas nos guste, center - justify - left - right*/
+        border-spacing: 5px;
+      }
+    </style>
+    <br />
+    <!---Tabla HTML: celda que abarca muchas columnas--->
+    <h2 style="color: crimson;">Celda que abarca muchas columnas &#9889;</h2>
+    <table class="tabla-7" style="width: 100%;">
+      <tr>
+        <th class="tabla-7">Firstname</th>
+        <th class="tabla-7" colspan="2">Lastname</th>
+        <!-----Para hacer que una celda abarque más de una columna, usar el atributo colspan-->
+      </tr>
+      <tr>
+        <td class="tabla-7">Jill</td>
+        <td class="tabla-7">Smith</td>
+        <td class="tabla-7">50</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-7 {
+        border: 2px solid black;
+        background-color: rgb(188, 255, 100);
+        color: rgb(19, 27, 27);
+        font-family: monospace;
+        text-align: right;
+        border-spacing: 5px;
+        font-size: 16px;
+      }
+    </style>
+    <br />
+    <!---Tabla HTML: celda que abarca muchas filas--->
+    <h2 style="color: crimson;">Celda que abarca muchas filas &#9925;</h2>
+    <table class="tabla-8" style="width: 100%;">
+      <tr>
+        <th class="tabla-8">Firstname</th>
+        <th class="tabla-8" rowspan="2">Lastname</th>
+        <!-----Para hacer que una celda abarque más de una fila, usar el atributo rowspan-->
+      </tr>
+      <tr>
+        <td class="tabla-8">Jill</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-8 {
+        border: 2px solid black;
+        background-color: rgb(255, 131, 100);
+        color: rgb(221, 221, 221);
+        font-family: monospace;
+        text-align: center;
+        border-spacing: 5px;
+        font-size: 16px;
+      }
+    </style>
+    <br />
+    <!---Tabla HTML: agregar un título--->
+    <h2 style="color: crimson;">Agregar un título &#127383;</h2>
+    <table class="tabla-9" style="width: 100%;">
+      <caption>
+        <!-----Nota: La <caption> etiqueta debe insertarse inmediatamente después de la <table> etiqueta.-->
+        Soy un titulo
+      </caption>
+      <tr>
+        <th class="tabla-9">Firstname</th>
+        <th class="tabla-9" rowspan="2">Lastname</th>
+      </tr>
+      <tr>
+        <td class="tabla-9">Jill</td>
+      </tr>
+    </table>
+    <style>
+      .tabla-9 {
+        border: 2px solid black;
+        background-color: rgb(100, 219, 255);
+        color: rgb(12, 10, 10);
+        font-family: monospace;
+        text-align: center;
+        border-spacing: 6px;
+        font-size: 16px;
+      }
+    </style>
+    <br />
+
+    <!---Tabla HTML - Un estilo especial--->
+    <h2 style="color: crimson;">Estilos &#9973;</h2>
+    <table id="hola" style="width: 100%;">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <!--------OK, AHORA VEMOS QUE NO HACE FALTA COLOCARLE CLASE A CADA ELEMENTO, CON UN ID PODEMOS
+      SELECCIONAR TODA LA TABLA --------->
+    <style>
+      #hola {
+        border: 2px solid black;
+        background-color: rgb(248, 43, 104);
+        border-collapse: collapse;
+        padding: 10px;
+        color: ghostwhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+    </style>
+    <br />
+
+    <!--------
+
+      RESUMEN
+      
+          ***>  Use el <table> elemento HTML para definir una tabla
+          ***>  Use el <tr> elemento HTML para definir una fila de la tabla
+          ***>  Utilice el <td> elemento HTML para definir los datos de una tabla.
+          ***>  Use el <th> elemento HTML para definir un encabezado de tabla
+          ***>  Use el <caption> elemento HTML para definir un título de tabla
+          ***>  Use la border propiedad CSS para definir un borde
+          ***>  Use la border-collapse propiedad CSS para contraer los bordes de las celdas
+          ***>  Use la padding propiedad CSS para agregar relleno a las celdas
+          ***>  Use la text-alignpropiedad CSS para alinear el texto de la celda
+          ***>  Use la border-spacing propiedad CSS para establecer el espacio entre celdas
+          ***>  Use el colspan atributo para hacer que una celda abarque muchas columnas
+          ***>  Use el rowspan atributo para hacer que una celda abarque muchas filas
+          ***>  Use el idatributo para definir de forma exclusiva una tabla
+      
+      -------->
+  </body>
 </html>

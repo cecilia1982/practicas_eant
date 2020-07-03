@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Elementos en Linea y en Bloque</title>
+    <style>
+      body {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ELEMENTOS DE LINEA Y DE BLOQUE &#9994;</h1>
+    <p>
+      Cada elemento HTML tiene un valor de visualización predeterminado, según
+      el tipo de elemento que sea. Hay dos valores de visualización: bloque e
+      inline.
+    </p>
+    <h2>Elementos a nivel de bloque</h2>
+    <p>
+      Un elemento de nivel de bloque siempre comienza en una nueva línea y ocupa
+      todo el ancho disponible (se extiende hacia la izquierda y hacia la
+      derecha tanto como sea posible).<br />
+    </p>
+    <h3><strong>El elemento DIV es un elemento de nivel de bloque.</strong></h3>
+    <br />
+    <div style="background-color: dodgerblue;">
+      SOY UN BLOQUE, HOLA, QUIERO OCUPAR TODO EL ESPACIO QUE ME BRINDA MI
+      CONTENEDOR, SOLO PARA MI JOJO &#10060;
+    </div>
+    <h3>
+      <strong>&#11088; Estos son todos los elementos de bloque en HTML5</strong>
+    </h3>
+
+    <ul>
+      <li>address</li>
+      <li>article</li>
+      <li>aside</li>
+      <li>blockquote</li>
+      <li>canvas</li>
+      <li>dd</li>
+      <li>dt</li>
+      <li>fieldset</li>
+      <li>figcaption</li>
+      <li>figure</li>
+      <li>footer</li>
+      <li>form</li>
+      <li>h1</li>
+      <li>h6</li>
+      <li>header</li>
+      <li>hr</li>
+      <li>li</li>
+      <li>main</li>
+      <li>nav</li>
+      <li>noscript</li>
+      <li>ol</li>
+      <li>p</li>
+      <li>pre</li>
+      <li>section</li>
+      <li>table</li>
+      <li>tfoot</li>
+      <li>ul</li>
+      <li>video</li>
+    </ul>
+    <hr />
+    <h2>Elementos a nivel de Linea</h2>
+    <p>
+      Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho
+      que sea necesario.<br />
+    </p>
+    <h3>
+      <strong
+        >Ejemplo, el elemento SPAN es un elemento de nivel de linea.</strong
+      >
+    </h3>
+
+    <h3>
+      <strong>&#127746; Estos son todos los elementos de linea en HTML5</strong>
+    </h3>
+
+    <ul>
+      <li>a</li>
+      <li>abbr</li>
+      <li>acronym</li>
+      <li>b</li>
+      <li>bdo</li>
+      <li>big</li>
+      <li>br</li>
+      <li>button</li>
+      <li>cite</li>
+      <li>code</li>
+      <li>dfn</li>
+      <li>em</li>
+      <li>i</li>
+      <li>img</li>
+      <li>input</li>
+      <li>kdb</li>
+      <li>label</li>
+      <li>map</li>
+      <li>objet</li>
+      <li>output</li>
+      <li>q</li>
+      <li>samp</li>
+      <li>script</li>
+      <li>select</li>
+      <li>small</li>
+      <li>span</li>
+      <li>strong</li>
+      <li>sub</li>
+      <li>sup</li>
+      <li>textarea</li>
+      <li>time</li>
+      <li>tt</li>
+      <li>var</li>
+    </ul>
+    <hr />
+    <article style="background: lightblue;">
+      <h2>El elemento DIV y SPAN &#127771;</h2>
+      <p>
+        El elemento DIV es un elemento de bloque, se usa a menudo como
+        contenedor para otros elementos HTML tambien de bloque o de linea.<br />
+        Las etiquetas DIV y SPAN, no tienen ningún tipo de significado especial,
+        solo que la primera se define como un elemento de bloque y por tanto el
+        navegador mostrara un salto de línea antes y después de la misma.
+        Mientras que la segunda es un elemento de línea.
+      </p>
+    </article>
+
+    <!-----Ejemplos de etiqueta div en HTML------>
+    <!---ANTES se solía utilizar para organizar las secciones de una página web tales como la cabecera, la navegación o menú, el cuerpo de página, los pies de página, barras laterales, etc. Se le solía poner un atributo id o class--->
+    <!---AHORA que apareció HTML5 es mejor emplear las nuevas etiquetas html5 como: <header>, <article>, <footer>, etc.-->
+
+    <div id="rojo" style="background-color: rgb(221, 87, 87);">
+      <h1>Titulo en contenedor rojo</h1>
+      <br />
+
+      <div id="azul" style="background-color: rgb(113, 113, 209);">
+        <p>
+          Este es un párrafo dentro de un contenedor div con fondo rojo y que a
+          su vez esta dentro de otro contenedor div con fondo azul
+        </p>
+      </div>
+
+      <br /><br />
+    </div>
+    <br />
+
+    <div id="verde" style="background-color: rgb(98, 207, 98);">
+      <h2>Subtitulo en contenedor verde</h2>
+      <img src="files/10.jpg" width="250px" height="180px" />
+      <p>
+        Este es otro parrado que esta dentro de un contenedor div con fondo
+        verde
+      </p>
+    </div>
+
+    <!-----Ejemplos de etiqueta SPAN en HTML------>
+    <article style="background: lightblue;">
+      <h2>Que onda con SPAN &#127776;</h2>
+      <p>
+        La etiqueta <strong>SPAN</strong> también funciona como un contenedor
+        pero en este caso será un contenedor en línea. Para destacar una palabra
+        dentro de un párrafo utilizaremos la etiqueta SPAN, para encerrar esa
+        palabra o expresión y luego ponerle un estilo mediante un atributo. O
+        también podemos ponerle un id o class para luego maquetarlo con CSS.
+      </p>
+    </article>
+    <p>
+      Este es un párrafo en el que insertaremos un elemento span a continuación
+      para diferenciarlo
+      <span style="background: yellow; color: red;"
+        >Texto especial dentro de etiqueta span con fondo amarillo y color
+        rojo</span
+      >
+      ese texto especial sigue dentro del párrafo y en linea, forma parte del
+      párrafo, pero podemos especificar alguna característica
+    </p>
+    <blockquote
+      style="
+        padding: 20px;
+        background-color: lightgreen;
+        font-weight: 800;
+        font-style: italic;
+      "
+    >
+      &#127793; En resumen, la diferencia entre el div y span es que div se
+      emplea para agrupar elementos html en un bloque en cambio span sirve para
+      agrupar dentro de una línea.
+    </blockquote>
+  </body>
+</html>

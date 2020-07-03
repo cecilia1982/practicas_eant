@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Todo sobre IFRAME</title>
+    <style>
+      body {
+        background-color: lightgrey;
+        font-family: cursive;
+        padding: 20px;
+        text-align: center;
+      }
+      #titulo {
+        background-color: lime;
+        margin-left: 250px;
+        margin-right: 250px;
+        border-radius: 20px;
+
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="titulo">
+      <h1>Iframes HTML &#10024;</h1>
+    </div>
+
+    <p>
+      Un iframe HTML se usa para mostrar una página web dentro de una página web
+      ??? wtf
+    </p>
+    <h2>Sintaxis de iframe HTML &#9970;</h2>
+    <p>
+      La etiqueta IFRAME, se utiliza como un marco en línea para incrustar otro
+      documento dentro del documento HTML actual.
+    </p>
+    <h3>Sintaxis iframe src="url" title="description"</h3>
+    <p>
+      Es una buena práctica incluir siempre un title atributo para IFRAME. Los
+      lectores de pantalla lo usan para leer cuál es el contenido del iframe...
+    </p>
+    <h3>Establecer altura y ancho &#x26C4;</h3>
+    <p>
+      Para esto vamos a usar los atributos HEIGTH y WIDTH para especificar el
+      tamaño del iframe.
+    </p>
+    <h4>
+      &#127754; La altura y el ancho se especifican en píxeles de forma
+      predeterminada.
+    </h4>
+    <iframe
+      src="https://www.youtube.com/embed/h8McmFWT32E"
+      height="200"
+      width="300"
+      title="Iframe Example"
+    ></iframe>
+    <h4>
+      &#127754; O podemos agregar el style atributo y usar el CSS heighty las
+      width propiedades
+    </h4>
+    <iframe
+      src="https://www.youtube.com/embed/a8QwxdF_oMQ"
+      style="height: 200px; width: 300px;"
+      title="Iframe Example"
+    ></iframe>
+    <h4>
+      &#127754; Eliminar el borde o agregarle estilos
+    </h4>
+
+    <iframe
+      src="https://www.youtube.com/embed/xFrGuyw1V8s"
+      style="border: 2px solid red;"
+      title="Iframe Example"
+    ></iframe>
+    <iframe
+      src="https://www.youtube.com/embed/7AQSLozK7aA"
+      style="border: none;"
+      title="Iframe Example"
+    ></iframe>
+    <h4>
+      &#127773; Iframe: objetivo de un enlace
+    </h4>
+    <p>
+      Se puede usar un iframe como marco objetivo para un enlace. <br />El
+      target atributo del enlace debe referirse al name atributo del iframe
+    </p>
+    <iframe
+      src="https://www.youtube.com/embed/9ZDAYg196x8"
+      name="iframe_a"
+      title="Iframe Example"
+    ></iframe>
+
+    <p>
+      <a href="https://www.youtube.com/embed/9ZDAYg196x8" target="iframe_a"
+        >Videazo</a
+      >
+    </p>
+
+    <!------
+		
+	RESUMEN
+				***> La <iframe> etiqueta HTML especifica un marco en línea
+				***> El src atributo define la URL de la página para insertar
+				***> Incluir siempre un title atributo (para lectores de pantalla)
+				***> Los atributos height y width especifican el tamaño del iframe
+				***> Usar border:none; para eliminar el borde alrededor del iframe
+		------->
+  </body>
+</html>
