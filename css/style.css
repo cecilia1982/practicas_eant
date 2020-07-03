@@ -1,0 +1,34 @@
+/*
+CSS HOJA DE ESTILO EN CASCADA - cascada significa que un estilo aplicado a un elemento primario también se aplicará 
+a todos los elementos secundarios dentro del elemento primario. Por lo tanto, si configura el color del texto 
+del cuerpo en "azul", ¡todos los encabezados, párrafos y otros elementos de texto dentro del cuerpo 
+también obtendrán el mismo color (a menos que especifique algo más)!
+
+*/
+
+/*
+CSS se puede agregar a documentos HTML de 3 maneras:
+
+En línea : mediante el uso del styleatributo dentro de elementos HTML
+Interno : mediante el uso de un <style>elemento en la <head>sección
+Externo : mediante el uso de un <link> elemento para vincular a un archivo CSS externo
+
+*/
+
+/*SELECTORES - SON 3*/
+
+/*De etiqueta -----> NOMBRANDO LA ETIQUETA*/
+
+body {
+  font-family: "Courier New", Courier, monospace, fantasy;
+  background-color: #ccd1d1;
+}
+/*De ID ----> USANDO EL #*/
+
+#titulos {
+  font-size: 50px;
+}
+/*De CLASE -----> USANDO .*/
+.titulos {
+  font-size: 50px;
+}

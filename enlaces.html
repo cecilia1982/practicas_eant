@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jugando con Enlaces</title>
+  </head>
+  <body>
+    <h1>Soy un documento de ENLACES</h1>
+    <!----DIRIGIRNOS A SITIOS EXTERNOS---->
+    <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank"
+      >Ir a un sitio externo usando el protocolo https</a
+    >
+    <br />
+    <!----DIRIGIRNOS A ARCHIVOS QUE ESTAN DENTRO DE NUESTRA CARPETA---->
+    <a href="listas.html">Ir a Listas, documento interno</a>
+    <br />
+    <a href="textos.html" target="_blank">Ir a Listas abriendo otra pestaña</a>
+    <!----DIRIGIRNOS A ARCHIVOS QUE ESTAN DENTRO DE OTRA CARPETA------->
+    <br />
+    <a href="files/textos.html">Ir a Listas abriendo otra carpeta</a>
+    <!----DIRIGIRNOS A UNA IMAGEN QUE ESTAN DENTRO DE OTRA CARPETA------->
+    <br />
+    <a href="files/10.jpg" alt="360">Abrir una imagen desde otra carpeta</a>
+    <!--Enlace a una dirección de correo electrónico-->
+    <br />
+    <a href="mailto:someone@example.com">Send email</a>
+    <!-----URL absolutas frente a URL relativas------>
+    <!---URL absoluta (una dirección web completa) en el href atributo
+		Se especifica un enlace local (un enlace a una página dentro del mismo sitio web) 
+    con una URL relativa (sin la parte "https: // www") Una URL relativa es una versión abreviada de una URL 
+    absoluta. Su objetivo es eliminar todas las partes de la URL absoluta que se pueden adivinar a partir 
+    de la información de contexto de la página web. En otras palabras, las URL relativas aprovechan la inteligencia 
+    de los navegadores para crear URL incompletas que los navegadores pueden completar deduciendo la información que falta.--->
+    <br />
+    <h2>URLs Absolutas</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>URLs Relativas</h2>
+    <p><a href="img/moy2.png">HTML Images</a></p>
+    <p><a href="files/textos.html">Ir a textos</a></p>
+
+    <!----Elemento	          Valor
+          Página origen	      http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+          Página enlazada	    Página web llamada pagina2.html y que se encuentra en el mismo directorio
+          URL absoluta	      http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina2.html
+          URL relativa	      pagina2.html -->
+
+    <!----Enlaces HTML: el atributo de destino--->
+    <!---
+	**El targetatributo especifica dónde abrir el documento vinculado**
+	**El targetatributo puede tener uno de los siguientes valores:
+
+	_self- Defecto. Abre el documento en la misma ventana / pestaña en la que se hizo clic
+	_blank - Abre el documento en una nueva ventana o pestaña
+	_parent - Abre el documento en el marco primario
+	_top - Abre el documento en el cuerpo completo de la ventana.
+	-->
+    <br />
+    <h2>Otros enlaces</h2>
+    <!------------Botón como enlace------------>
+    <br />
+    <button onclick="document.location='listas.html'">HTML Tutorial</button>
+    <!-----------Títulos de enlaces------------>
+    <br />
+    <a
+      href="https://www.w3schools.com/html/"
+      title="Go to W3Schools HTML section"
+      >Visitando un tuto de HTML re groso</a
+    >
+    <!-------Crear un marcador en HTML-------->
+    <br />
+    <h2>Enlaces MARCADORES</h2>
+    <!-------PRIMERO CREAMOS EL MARCADOR - TENEMOS QUE USAR EL ATRIBUTO ID------->
+    <h3 id="C4">CAPITULO 4</h3>
+    <!-------DESPUES AGREGAMOS EN ENLACE------->
+    <a href="#C4">SALTAR AL CAP 4</a>
+    <br />
+    <!-------También podemos agregar un enlace a un marcador en otra página------->
+    <a href="textos.html#C4">SALTAR AL ID QUE COLOCAMOS EN TEXTO.HTML</a>
+  </body>
+</html>

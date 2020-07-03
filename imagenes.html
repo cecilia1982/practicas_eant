@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jugando con IMAGENES</title>
+  </head>
+  <body>
+    <!------Estos son los tipos de archivos de imagen más comunes, que son compatibles con todos los navegadores
+	
+		APNG- Animated Portable Network Graphics .apng
+		GIF	- Graphics Interchange Format  .gif
+		ICO	- Microsoft Icon	.ico, .cur
+		JPEG - Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+		PNG	- Portable Network Graphics	.png
+		SVG	- Scalable Vector Graphics	.svg
+	
+	-->
+    <!-----INSERTANDO UNA IMAGEN JPG----->
+    <img src="img/10.jpg" alt="Esta es una foto en 360 grados" width="30%" />
+    <!-----INSERTANDO UNA IMAGEN EN PNG CON TRANSPARENCIAS----->
+    <img src="img/moy2.png" alt="logo" width="30%" />
+    <!-----INSERTANDO UNA IMAGEN GIF----->
+    <img src="img/nos.gif" alt="logo" />
+    <!-----INSERTANDO UNA IMAGEN ALOJADA EN OTRO SERVIDOR----->
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+    />
+    <!-----INSERTANDO UNA IMAGEN COMO UN ENLACE----->
+    <a href="https://eant.tech/home">
+      <img
+        src="img/moy2.png"
+        alt="HTML tutorial"
+        style="float: left; width: 30%;"
+      />
+    </a>
+    <!-------------Mapas de imagen---------------->
+    <!--Un mapa de imagen es una imagen con áreas en las que se puede hacer clic. 
+		  Las áreas se definen con una o más <area> etiquetas-->
+    <img
+      src="img/10.jpg"
+      alt="360"
+      usemap="#workmap"
+      style="float: right; width: 30%;"
+    />
+    <!--El usemapvalor comienza con una etiqueta hash #seguida del nombre del mapa 
+			de imagen y se usa para crear una relación entre la imagen y el mapa de imagen-->
+
+    <map name="workmap">
+      <!----Agregamos el elemento map y el atributo name con el mismo valor de usemap-->
+      <area shape="rect" coords="34,44,270,350" alt="Bar" href="img/nos.gif" />
+      <!---Luego AGREGAMOS las áreas en las que se puede hacer clic--->
+    </map>
+    <!--
+			  **Forma**
+				Debemos definir la forma del área en la que se puede hacer clic y podemos elegir uno de estos valores:
+				rect - define una región rectangular
+				circle - define una región circular
+				poly - define una región poligonal
+				default - define toda la región
+				También debe definir algunas coordenadas para poder colocar el área en la que se puede hacer 
+				clic en la imagen. 
+			-->
+  </body>
+</html>
