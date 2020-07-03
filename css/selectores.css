@@ -1,0 +1,72 @@
+/*
+CSS HOJA DE ESTILO EN CASCADA - cascada significa que un estilo aplicado a un elemento primario también se aplicará 
+a todos los elementos secundarios dentro del elemento primario. Por lo tanto, si configura el color del texto 
+del cuerpo en "azul", ¡todos los encabezados, párrafos y otros elementos de texto dentro del cuerpo 
+también obtendrán el mismo color (a menos que especifique algo más)!
+
+*/
+
+/*
+CSS se puede agregar a documentos HTML de 3 maneras:
+
+En línea : mediante el uso del styleatributo dentro de elementos HTML
+Interno : mediante el uso de un <style>elemento en la <head>sección
+Externo : mediante el uso de un <link> elemento para vincular a un archivo CSS externo
+
+*/
+
+/*SELECTORES - SON 3*/
+
+/*De etiqueta -----> NOMBRANDO LA ETIQUETA Y APLICANDOLE EL ESTILO CORRESPONDIENTE*/
+/*Afecta a todos los elementos que tengan ese tag/etiqueta*/
+
+body {
+  font-family: "Courier New", Courier, monospace, fantasy;
+  background-color: #ccd1d1;
+}
+/*De ID ----> USANDO EL # MAS EL NOMBRE DEL ID --- RECORDAR QUE ESE ID YA DEBE ESTAR ASIGNADO 
+PREVIAMENTE SOBRE EL ELEMENTO QUE DESEAMOS MODIFICAR EN EL HTML*/
+/*Afecta por unica vez a un elemento, no pasa nada si se repite, pero no es bueno ya que puede 
+generar conflictos a futuro y no es una buena practica*/
+
+#titulos {
+  font-size: 50px;
+}
+/*De CLASE -----> USANDO . ---- RECORDAR QUE ESA CLASE YA DEBE ESTAR ASIGNADO 
+PREVIAMENTE SOBRE EL ELEMENTO O LOS ELEMENTOS QUE DESEAMOS MODIFICAR EN EL HTML*/
+/*Lo usamos cuando queremos impactar a mas de un elemento, es lo que mas vamos a usar cuando maquetamos
+podemos crear cuantas clases necesitemos, un elemento puede tener id y clase, tambien varias clases*/
+
+.titulos {
+  font-size: 50px;
+}
+
+/*SELECTORES COMPUESTOS - no se deja espacio*/
+
+.header#uno {
+  font-variant: normal;
+}
+
+/*SELECTOR DESCENDIENTE - Se deja un espacio entre selectores, el primero es el ansestro*/
+
+.header #uno {
+  font-stretch: extra-condensed;
+}
+
+/*SELECTORES DE ATRIBUTO - Se aplica a todos los elementos que tengan tal atributo, usamos corchetes*/
+
+[href] {
+  background-color: deeppink;
+}
+/*LO MISMO PERO AGREGANDO EL VALOR*/
+[href="facebook"] {
+  background-color: deeppink;
+}
+
+/*COMODINES NINJA CSS*/
+
+span [title="youtube" i] {
+  font-size: 50px;
+}
+/*Les estoy diciendo que aplique a un selector de etiqueta llamado span, con atributo title, 
+ con el valor youtube y ademas le agrego la letra i para avisarle que sea insensible a mayusculas o minusculas*/
