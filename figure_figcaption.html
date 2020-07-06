@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jugando Figcaption y figure</title>
+    <style>
+      .fig {
+        color: indigo;
+        font-weight: 800;
+        font-family: monospace;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!----Elementos HTML <figure> y <figcaption>------>
+    <!---
+	
+	La etiqueta <figure> especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de códigos, etc.
+	La etiqueta <figcaption> define un título para un elemento <figure>. 
+	El <figcaption> se puede colocar como el primer o el último hijo del elemento <figure>.
+	
+	
+	-->
+
+    <figure>
+      <img src="img/nos.gif" alt="ejemplo" />
+      <figcaption>Recorriendo puerto madero con la camara 360</figcaption>
+    </figure>
+    <figure>
+      <img src="http://lorempixel.com/g/400/200/" alt="ejemplo 2" />
+      <figcaption class="fig">
+        Soy un elemento hijo de figure que describo la imagen
+      </figcaption>
+    </figure>
+  </body>
+</html>

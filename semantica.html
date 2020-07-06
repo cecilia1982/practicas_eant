@@ -4,39 +4,248 @@
     <meta charset="UTF-8" />
 
     <title>Jugando con Etiquetas Semanticas</title>
+    <style>
+      #section1 {
+        background-color: darkturquoise;
+      }
+      #section2 {
+        background-color: rgb(178, 245, 192);
+      }
+      #footer {
+        background-color: deeppink;
+      }
+      #header {
+        background-color: gold;
+      }
+
+      .all-browsers {
+        margin: 0;
+        padding: 5px;
+        background-color: rgb(255, 227, 185);
+      }
+
+      .all-browsers > h1,
+      .browser {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .browser {
+        background: white;
+      }
+
+      .browser > h2,
+      p {
+        margin: 4px;
+        font-size: 90%;
+      }
+
+      aside {
+        width: 40%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: rgb(218, 57, 57);
+        color: honeydew;
+      }
+
+      #lista {
+        background-color: indigo;
+        color: peachpuff;
+      }
+    </style>
   </head>
   <body>
     <!------Elementos semánticos = elementos con un significado------>
-    <!------HEADER------>
-    <header>
-      <p>Mi Logo</p>
+    <!-------NOS AYUDAN A ESTRUCTURAR LA INFORMACION Y TAMBIEN AYUDAMOS A LOS NAVEGADORES
+    A INTERPRETAR DE MEJOR MANERA LA ESTRUCTURA Y SU INFORMACION - VAMOS A DIVIDIR NUESTRO SITIO 
+    EN DIFERENTES SECCIONES, ANTERIORMENTE SE OCUPABA MUCHO EL DIV CON ID O CLASES *SIGUE VIGENTE*--------->
+    <!------HEADER
+      El  elemento <header> representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación.
+
+      Un <header> generalmente contiene:
+
+      **uno o más elementos de encabezado (<h1> - <h6>)
+      **logotipo o icono
+      **información de autoría
+      Nota: Puede tener varios <header> un documento HTML. Sin embargo, 
+      <header> no puede ser colocado dentro de un <footer>, <address> o en otro <header> elemento.
+      
+      ------>
+    <header id="header">
+      <h1>Soy un header - Estructura Semantica HTML5</h1>
     </header>
-    <!------NAV------>
-    <!------Elementos semánticos = elementos con un significado------>
-    <nav>
-      <a href="#"> Inicio</a>
-      <a href="#"> Nosotros</a>
-      <a href="#"> Servicios</a>
+
+    <!------NAV
+
+      EL NAV PUEDE ESTAR DENTRO O FUERA DEL HEADER, 
+      ESTO SOLO DEPENDERA DE LA ARQUITECTURA DEL LAYOUT
+      El <nav> define un conjunto de enlaces de navegación.
+      
+    Tener en cuenta que NO todos los enlaces de un documento deben estar dentro de un elemento <nav> 
+    El <nav> está destinado solo para el bloque principal de enlaces de navegación.
+ 
+    ------>
+    <nav id="nav">
+      <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
     </nav>
-    <!--------EL NAV PUEDE ESTAR DENTRO O FUERA DEL HEADER, ESTO SOLO DEPENDERA DE LA ARQUITECTURA DEL LAYOUT------>
+    <!---SECTION Una sección es una agrupación temática de contenido, generalmente con un encabezado
+    Una página web normalmente se puede dividir en secciones para introducción, contenido e información 
+    de contacto.-->
+    <section id="section1">
+      <!--ARTICLE 
+      Un artículo debe tener sentido por sí solo, y debería ser posible distribuirlo independientemente 
+      del resto del sitio web.
+
+      Ejemplos de dónde <article> se puede usar un elemento:
+
+      Publicación del foro
+      Entrada en el blog
+      Artículo de periódico
+
+      EN EL SIGUIENTE EJEMPLO, VEMOS 2 ARTICLES CON CONTENIDO AUTONOMO
+      -->
+      <article>
+        <header>
+          <h2>Titulo de header en article 1</h2>
+          <h4>Subtitulo del header en article 1</h4>
+          <p>
+            10/05/2020
+          </p>
+          <details>
+            Hola
+          </details>
+        </header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ad
+          corporis vero repudiandae accusamus quibusdam animi obcaecati
+          voluptatum dolorum tempora omnis ab. Delectus porro repudiandae cumque
+          omnis nobis dolores debitis.
+        </p>
+        <footer>
+          <p>Comentarios (5) :)</p>
+        </footer>
+      </article>
+    </section>
+    <section id="section2">
+      <article>
+        <header>
+          <h2>Titulo de header en article 2</h2>
+          <h4>Subtitulo del header en article 2</h4>
+          <p>
+            10/05/2020
+          </p>
+        </header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ad
+          corporis vero repudiandae accusamus quibusdam animi obcaecati
+          voluptatum dolorum tempora omnis ab. Delectus porro repudiandae cumque
+          omnis nobis dolores debitis.
+        </p>
+        <footer>
+          <p>Comentarios (10) :)</p>
+        </footer>
+      </article>
+    </section>
+    <!---ANIDAR SECTION Y ARTICLE ¿Anidando <artículo> en <sección> o viceversa?
+      
+      El <article> elemento especifica contenido independiente y autónomo.
+
+      El <section>elemento define la sección en un documento.
+
+      ¿Podemos usar las definiciones para decidir cómo anidar esos elementos? ¡No podemos! 
+      Por lo tanto, encontras páginas HTML con elementos <section> que contienen <article> 
+      y elementos <article> que contienen elementos <section>.
+      
+      EN EL SIGUIENTE EJEMPLO USAMOS ARTICLE SIN SECTION...
+      -->
+    <article class="all-browsers">
+      <h1>Browsers mas populares</h1>
+      <article class="browser">
+        <h2>Google Chrome</h2>
+        <p>
+          Google Chrome is a web browser developed by Google, released in 2008.
+          Chrome is the world's most popular web browser today!
+        </p>
+      </article>
+      <article class="browser">
+        <h2>Mozilla Firefox</h2>
+        <p>
+          Mozilla Firefox is an open-source web browser developed by Mozilla.
+          Firefox has been the second most popular web browser since January,
+          2018.
+        </p>
+      </article>
+    </article>
+
+    <!---ASIDE
+    
+    El <aside> define algo de contenido aparte del contenido en el que se coloca (como una barra lateral).
+    El contenido <aside> debe estar indirectamente relacionado con el contenido circundante.
+    
+  
+    -->
     <section>
-      <h2>Soy una seccion</h2>
+      <aside id="aside">
+        <p>
+          <strong
+            >SOY un ASIDE - Me usan para menu lateral de navegacion, gadgets,
+            publicidad, etc - ME COLOCO EN MI LUGAR CON CSS</strong
+          >
+        </p>
+      </aside>
+
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quia
-        eveniet. Ex, nostrum quisquam expedita quibusdam esse voluptatibus
-        consequatur voluptas eum ipsam beatae fuga molestias dolorum ut, eaque
-        atque dolores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illum
+        error earum? Repellendus eum voluptas, quos consectetur dolore.
       </p>
+
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quia
-        eveniet. Ex, nostrum quisquam expedita quibusdam esse voluptatibus
-        consequatur voluptas eum ipsam beatae fuga molestias dolorum ut, eaque
-        atque dolores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam illum
+        error earum? Repellendus eum voluptas, quos consectetur dolore.
       </p>
     </section>
-    <aside>
-      <p>Aca hay publicidad, gadgets lo que sea</p>
-    </aside>
-    <footer></footer>
+
+    <!----FOOTER
+      El <footer> define un pie de página para un documento o sección.
+
+      Un <footer> generalmente contiene:
+
+      **información de autoría
+      **informacion registrada
+      **Información del contacto
+      **mapa del sitio
+      **volver al principio enlaces
+      **documentos relacionados
+      **Puede tener varios <footer> en un documento.
+          
+
+    -->
+    <section id="lista">
+      <h3>ELEMENTOS SEMANTICOS HTML5</h3>
+      <ul>
+        <li>article</li>
+        <li>aside</li>
+        <li>details</li>
+        <li>figcaption</li>
+        <li>figure</li>
+        <li>footer</li>
+        <li>header</li>
+        <li>main</li>
+        <li>mark</li>
+        <li>nav</li>
+        <li>section</li>
+        <li>summary</li>
+        <li>time</li>
+      </ul>
+    </section>
+    <footer id="footer">
+      <p>2020 &COPY Soy el Footer</p>
+      <p>Author: Hege Refsnes</p>
+      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>FlexBox</title>
+    <style>
+      .contenedor {
+        width: 500px;
+        height: 200px;
+        background: rgb(199, 255, 70);
+        padding: 10px;
+        border: 10px solid rgb(79, 79, 80);
+        margin: 20px;
+      }
+      .elemento {
+        color: teal;
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!----FLEXBOX NOS PERMITE CENTRAR ELEMENTOS DE MANERA VERTICAL Y HORIZONTAL---->
+    <header>
+      <h1>FLEXBOX</h1>
+    </header>
+    <section>
+      <h2>justify-content</h2>
+      <p>Alinea elementos horizontalmente y acepta los siguientes valores:</p>
+      <ul>
+        <li>
+          flex-start: Alinea elementos al lado izquierdo del contenedor.
+        </li>
+        <li>
+          flex-end: Alinea elementos al lado derecho del contenedor.
+        </li>
+        <li>
+          center: Alinea elementos en el centro del contenedor.
+        </li>
+        <li>
+          space-between: Muestra elementos con la misma distancia entre ellos.
+        </li>
+        <li>
+          space-around: Muestra elementos con la misma separación alrededor de
+          ellos.
+        </li>
+      </ul>
+    </section>
+
+    <h2>EJEMPLO</h2>
+    <div class="contenedor">
+      <!---VAMOS A CREAR EL ELEMENTO CONTENEDOR, PORQUE SI VAMOS A USAR FLEXBOX 
+        NECESITAMOS UN CONTENEDOR Y DENTRO DEL MISMO NECESITAMOS ELEMENTOS---->
+      <div class="elemento elemento1">1</div>
+      <div class="elemento elemento2">2</div>
+      <div class="elemento elemento3">3</div>
+      <div class="elemento elemento4">4</div>
+    </div>
+  </body>
+</html>
