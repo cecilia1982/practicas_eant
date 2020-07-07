@@ -1,0 +1,59 @@
+/*-------------------------------*/
+/*---PSEUDO CLASES Y PSEUDO ELEMENTOS---*/
+/*-----------------------------*/
+
+/*
+Una Pseudo clase permite seleccionar un elemento a travez de una acción...
+Las llamadas “pseudo clases” son determinadas palabras clave que se añaden a los selectores para especificar diferentes 
+estados. Si los elementos a los que se aplican dichos selectores cumplen con estas condiciones o estados, 
+se aplican los estilos.
+
+**Notas**
+-----------
+De vez en cuando se utilizan dos puntos dobles (::) en vez de solo uno (:). Esto forma parte de CSS3 y de un intento 
+para distinguir pseudo-elementos de pseudo-clases.
+
+::selection siempre se escribe con dos puntos dobles (::).
+Solo se puede usar un pseudo-elemento por selector. 
+
+Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen 
+un estado especial sino que, permiten añadir estilos a una parte concreta del documento. 
+Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+
+-----------
+**SINTAXIS**
+
+selector:pseudoclase { propiedad: valor; } 
+Al igual que las clases, se pueden concatenar la cantidad de pseudoclases que se deseen en un selector.
+
+---------------PSEUDO CLASES/ELEMENTOS MAS USADAS------------
+
+
+:hover  -	EJ div:hover    >> Aplicará un estilo cuando el usuario haga hover sobre el elemento especificado 
+							   por el selector.
+:link 	-	EJ a:link 		>> Selecciona todos los enlaces no visitados
+:visited -  EJ a:visited 	>> Selecciona todos los enlaces visitados
+:active - 	EJ a:active		>> Selecciona el enlace activo 
+::after -  	EJ p::after		>> Inserta algo después del contenido de cada elemento <p>
+::before - 	EJ p::before  	>> Inserta algo antes del contenido de cada elemento <p>
+:empty - 	EJ p:empty		>> Selecciona cada elemento <p> que no tiene elementos secundarios 
+							   (incluidos los nodos de texto)
+:not -  	EJ :not(p)		>> Selecciona cada elemento que no es un elemento <p>
+
+---------- Lista de pseudoelementos DE POSICIÓN--------------
+
+::first-letter  - p::first-letter  >> Selecciona la primera letra de cada elemento <p>
+::first-line    - p::first-line    >> Selecciona la primera línea de cada elemento <p>
+:first-child    - p:first-child    >> Selecciona cada elemento <p> que es el primer hijo de su padre
+:last-child		- p:last-child     >> Elige cada elemento <p> que es el último hijo de su padre
+:nth-child(N)   - p:nth-child(2)   >> Selecciona cada elemento <p> que es el segundo hijo de su padre
+:nth-last-child(N) - p:nth-last-child(2)     >> Selecciona cada elemento <p> que es el segundo hijo de su padre, contando desde el último hijo
+:nth-of-type(N)    - p:nth-of-type(2)	     >> Selecciona cada elemento <p> que es el segundo elemento <p> de su padre
+:nth-last-of-type(N) - p:nth-last-of-type(2) >> Selecciona cada elemento <p> que es el segundo elemento <p> de su padre, contando desde el último hijo
+::placeholder        - 	input::placeholder   >> Selecciona elementos de entrada con el atributo "marcador de posición" especificado
+
+
+LISTA COMPLETA
+https://www.w3schools.com/cssref/css_selectors.asp
+
+*/
